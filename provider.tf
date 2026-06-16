@@ -5,16 +5,16 @@ terraform {
       version = "~> 6.0"
     }
   }
-  
-#   backend "s3" {
-#     bucket = "< bucket-name >"
-#     key    = "vpc-test" # you should have unique keys with in the bucket, same key should not be used in other repos or tf projects
-#     region = "us-east-1"
-#     dynamodb_table = "< dynamodb-table-name >"
-#   }
-# }
+/*   
+   backend "s3" {
+     bucket = "< bucket-name >"
+     key    = "vpc-test" # you should have unique keys with in the bucket, same key should not be used in other repos or tf projects
+     region = "us-east-1"
+     dynamodb_table = "< dynamodb-table-name >"
+   }
+ } */
+ 
 }
-
 provider "aws" {
   region = "us-east-1"
 }
